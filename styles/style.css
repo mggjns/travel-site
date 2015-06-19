@@ -1,209 +1,199 @@
 /* Alegra sans & Droid*/
-
 /*font-family: 'Droid Sans', sans-serif;
 
 font-family: 'Alegreya Sans', sans-serif;*/
 
 .body {
-	font-family: 'Droid Sans', sans-serif;
-	-webkit-font-smoothing: antialiased;
-	margin: 0;
-	padding: 0;
+  font-family: 'Droid Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .nav {
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	min-height: 30px;
-	background: rgb(103, 128, 159);
-	text-align: right;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 30px;
+  background: rgb(103, 128, 159);
+  text-align: right;
 }
 
 .nav a {
-	color: white;
+  color: white;
 }
 
 .nav ul {
-	margin: 0;
-	padding: 4px 5px 4px 0;
-	/* width: 90%; */
+  margin: 0;
+  padding: 4px 5px 4px 0;
 }
 
 .nav li {
-	display: inline-block;
-	/*float: left;*/
-	padding: .5em .5em;
+  display: inline-block;
+  padding: .5em .5em;
 }
 
 .title {
-	color: white;
-	padding-top: 3%;
-	padding-bottom: 3%;
-	background-color: rgb(31, 58, 147);
+  color: white;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  background-color: rgb(31, 58, 147);
 }
 
 .block-text {
-	display: block;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 6vw;
-	text-align: center;
+  display: block;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 6vw;
+  text-align: center;
 }
 
 .form-container {
-	/* margin-left: 12%; */
-	background-color: rgb(78,205,196);
-	padding: 3em 3em 5em 3em;
+  background-color: rgb(78, 205, 196);
+  padding: 3em 3em 5em 3em;
 }
 
 .panel-line {
-	color: rgb(226, 106, 106);
-	display: block;
+  color: rgb(226, 106, 106);
+  display: block;
 }
 
 .radio-tabs .state {
-    position: absolute;
-    left: -10000px;
+  position: absolute;
+  left: -10000px;
 }
+
 #flights:focus ~ .tabs #flights-tab,
 #hotels:focus ~ .tabs #hotels-tab,
 #cars:focus ~ .tabs #cars-tab {
-    box-shadow: 0 0 3px 3px rgba(0,127,255,.5);
+  box-shadow: 0 0 3px 3px rgba(0, 127, 255, .5);
 }
 
 .radio-tabs .tab {
-    display: inline-block;
-    padding: .5em;
-    vertical-align: top;
-    background-color: #eee;
-    cursor: hand;
-    cursor: pointer;
+  display: inline-block;
+  padding: .5em;
+  vertical-align: top;
+  background-color: #eee;
+  cursor: hand;
+  cursor: pointer;
 }
 
 .radio-tabs .tab:hover {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 #flights:checked ~ .tabs #flights-tab,
 #hotels:checked ~ .tabs #hotels-tab,
 #cars:checked ~ .tabs #cars-tab {
-    background-color: #fff;
-    border-bottom: .3em solid #fff;
-    cursor: default;
+  background-color: #fff;
+  border-bottom: .3em solid #fff;
+  cursor: default;
 }
 
 .radio-tabs .panels {
-    background-color: #fff;
-    padding: 1.3em;
-    width: 74%;
-    width: intrinsic;           
+  background-color: #fff;
+  padding: 1.3em;
+  width: 74%;
+  width: intrinsic;
 }
 
 .radio-tabs {
-	margin: 0 auto;
-	width: -webkit-max-content;
+  margin: 0 auto;
+  width: -webkit-max-content;
 }
 
 .radio-tabs .panel {
-    display: none;
+  display: none;
 }
 
 #flights:checked ~ .panels #flights-panel,
 #hotels:checked ~ .panels #hotels-panel,
 #cars:checked ~ .panels #cars-panel {
-    display: block;
+  display: block;
 }
-
 /* end of show */
 
-
 .circle-container {
-	margin: 3% 0;
-	text-align: center;
+  margin: 3% 0;
+  text-align: center;
 }
 
 .pic-container {
-	display: inline-block;
-	width: 15%;
-	height: auto;
-	margin: 10px 4%;
-	/*background: orange;*/
-	text-align: center;
+  display: inline-block;
+  width: 15%;
+  height: auto;
+  margin: 10px 4%;
+  text-align: center;
 }
 
 .pic {
-	background-color: rgb(253, 227, 167);
-	border-radius: 70%;
-	/*width: 150px;*/
-	/*height: 150px;*/
-	width: 100%;
-	padding: 50% 0;
-	text-align: center;
+  background-color: rgb(253, 227, 167);
+  border-radius: 70%;
+  width: 100%;
+  padding: 50% 0;
+  text-align: center;
 }
 
 .pic1 {
-	background-image: url("images/waterleaf.svg");	
-	background-size: cover;
+  background-image: url("images/waterleaf.svg");
+  background-size: cover;
 }
 
 .pic2 {
-	background-image: url("images/camera.svg");
-	background-size: cover;
-	background-position: center;
+  background-image: url("images/camera.svg");
+  background-size: cover;
+  background-position: center;
 }
 
 .pic3 {
-	background-image: url("images/biggreenleaf.svg");
-	background-size: cover;
-	background-position: center;
+  background-image: url("images/biggreenleaf.svg");
+  background-size: cover;
+  background-position: center;
 }
 
 input {
-	/*display: block;*/
-	padding: 9px;
-	margin: 0;
-	height: 23px;
-	border: solid 1px #dcdcdc;
+  /*display: block;*/
+  
+  padding: 9px;
+  margin: 0;
+  height: 23px;
+  border: solid 1px #dcdcdc;
   transition: box-shadow 0.3s, border 0.3s;
   width: 150px;
 }
 
 input[type=date]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    display: none;
+  -webkit-appearance: none;
+  display: none;
 }
 
 input[type=date] {
-	width: 134px;
+  width: 134px;
 }
 
 .margin-top {
-	margin-top: 5px;
+  margin-top: 5px;
 }
 
-select, option {
-  -webkit-appearance : none; /* To gain control over the appearance on WebKit */
-  -moz-appearance : none; /* To gain control over the appearance on Gecko */
-
-  /* To gain control over the appearance on Presto (Opera) and Trident (IE)
-     Note that it also work on Gecko and has partial effects on WebKit */  
-  /*background : none;*/
+select,
+option {
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 select {
-	padding: 5px;
-	margin: 0;
-	background-color: white;
-	height: 43px;
-	border: solid 1px #dcdcdc;
+  padding: 5px;
+  margin: 0;
+  background-color: white;
+  height: 43px;
+  border: solid 1px #dcdcdc;
   transition: box-shadow 0.3s, border 0.3s;
-	width: 147px;
-	text-align: center;
-	border-radius: 0;
+  width: 147px;
+  text-align: center;
+  border-radius: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
   text-indent: 1px;
@@ -211,44 +201,248 @@ select {
 }
 
 option {
-  padding : 5px;
-  color   : red;
+  padding: 5px;
+  color: red;
 }
 
 .search {
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 18px;
-	letter-spacing: 2px;
-	height: 43px;
-	text-align: center;
-	padding: 6px;
-	background: white;
-	width: 95px;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 18px;
+  letter-spacing: 2px;
+  height: 43px;
+  text-align: center;
+  padding: 6px;
+  background: white;
+  width: 95px;
 }
 
 .footer {
-	background-color: rgb(46, 204, 113);
-	height: 25px;
-	padding-right: 15px;
-	padding-top: 15px;
-	max-width: 100%;
-	text-align: right;
-	
+  background-color: rgb(46, 204, 113);
+  height: 25px;
+  padding-right: 15px;
+  padding-top: 15px;
+  max-width: 100%;
+  text-align: right;
 }
 
 @media (max-width: 985px) {
-	.radio-tabs {
-		/*width: -webkit-min-content;*/
-		width: 522px;
-	}
+  .radio-tabs {
+    /* Alegra sans & Droid*/
+    /*font-family: 'Droid Sans', sans-serif;
+
+font-family: 'Alegreya Sans', sans-serif;*/
+    
+    .body {
+      font-family: 'Droid Sans', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      margin: 0;
+      padding: 0;
+    }
+    a {
+      text-decoration: none;
+    }
+    .nav {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      min-height: 30px;
+      background: rgb(103, 128, 159);
+      text-align: right;
+    }
+    .nav a {
+      color: white;
+    }
+    .nav ul {
+      margin: 0;
+      padding: 4px 5px 4px 0;
+    }
+    .nav li {
+      display: inline-block;
+      padding: .5em .5em;
+    }
+    .title {
+      color: white;
+      padding-top: 3%;
+      padding-bottom: 3%;
+      background-color: rgb(31, 58, 147);
+    }
+    .block-text {
+      display: block;
+      font-family: 'Alegreya Sans', sans-serif;
+      font-size: 6vw;
+      text-align: center;
+    }
+    .form-container {
+      background-color: rgb(78, 205, 196);
+      padding: 3em 3em 5em 3em;
+    }
+    .panel-line {
+      color: rgb(226, 106, 106);
+      display: block;
+    }
+    .radio-tabs .state {
+      position: absolute;
+      left: -10000px;
+    }
+    #flights:focus ~ .tabs #flights-tab,
+    #hotels:focus ~ .tabs #hotels-tab,
+    #cars:focus ~ .tabs #cars-tab {
+      box-shadow: 0 0 3px 3px rgba(0, 127, 255, .5);
+    }
+    .radio-tabs .tab {
+      display: inline-block;
+      padding: .5em;
+      vertical-align: top;
+      background-color: #eee;
+      cursor: hand;
+      cursor: pointer;
+    }
+    .radio-tabs .tab:hover {
+      background-color: #fff;
+    }
+    #flights:checked ~ .tabs #flights-tab,
+    #hotels:checked ~ .tabs #hotels-tab,
+    #cars:checked ~ .tabs #cars-tab {
+      background-color: #fff;
+      border-bottom: .3em solid #fff;
+      cursor: default;
+    }
+    .radio-tabs .panels {
+      background-color: #fff;
+      padding: 1.3em;
+      width: 74%;
+      width: intrinsic;
+    }
+    .radio-tabs {
+      margin: 0 auto;
+      width: -webkit-max-content;
+    }
+    .radio-tabs .panel {
+      display: none;
+    }
+    #flights:checked ~ .panels #flights-panel,
+    #hotels:checked ~ .panels #hotels-panel,
+    #cars:checked ~ .panels #cars-panel {
+      display: block;
+    }
+    /* end of show */
+    
+    .circle-container {
+      margin: 3% 0;
+      text-align: center;
+    }
+    .pic-container {
+      display: inline-block;
+      width: 15%;
+      height: auto;
+      margin: 10px 4%;
+      text-align: center;
+    }
+    .pic {
+      background-color: rgb(253, 227, 167);
+      border-radius: 70%;
+      width: 100%;
+      padding: 50% 0;
+      text-align: center;
+    }
+    .pic1 {
+      background-image: url("images/waterleaf.svg");
+      background-size: cover;
+    }
+    .pic2 {
+      background-image: url("images/camera.svg");
+      background-size: cover;
+      background-position: center;
+    }
+    .pic3 {
+      background-image: url("images/biggreenleaf.svg");
+      background-size: cover;
+      background-position: center;
+    }
+    input {
+      /*display: block;*/
+      
+      padding: 9px;
+      margin: 0;
+      height: 23px;
+      border: solid 1px #dcdcdc;
+      transition: box-shadow 0.3s, border 0.3s;
+      width: 150px;
+    }
+    input[type=date]::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      display: none;
+    }
+    input[type=date] {
+      width: 134px;
+    }
+    .margin-top {
+      margin-top: 5px;
+    }
+    select,
+    option {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+    }
+    select {
+      padding: 5px;
+      margin: 0;
+      background-color: white;
+      height: 43px;
+      border: solid 1px #dcdcdc;
+      transition: box-shadow 0.3s, border 0.3s;
+      width: 147px;
+      text-align: center;
+      border-radius: 0;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      text-indent: 1px;
+      text-overflow: '';
+    }
+    option {
+      padding: 5px;
+      color: red;
+    }
+    .search {
+      font-family: 'Alegreya Sans', sans-serif;
+      font-size: 18px;
+      letter-spacing: 2px;
+      height: 43px;
+      text-align: center;
+      padding: 6px;
+      background: white;
+      width: 95px;
+    }
+    .footer {
+      background-color: rgb(46, 204, 113);
+      height: 25px;
+      padding-right: 15px;
+      padding-top: 15px;
+      max-width: 100%;
+      text-align: right;
+    }
+    @media (max-width: 985px) {
+      .radio-tabs {
+        width: 522px;
+      }
+    }
+    @media (max-width: 580px) {
+      .radio-tabs {
+        width: -webkit-min-content;
+      }
+      .search {
+        margin-left: 20%;
+      }
+    }
+    width: 522px;
+  }
 }
 
 @media (max-width: 580px) {
-	.radio-tabs {
-		width: -webkit-min-content;
-	}
-
-	.search {
-		 margin-left: 20%; 
-	}
+  .radio-tabs {
+    width: -webkit-min-content;
+  }
+  .search {
+    margin-left: 20%;
+  }
 }
