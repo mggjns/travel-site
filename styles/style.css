@@ -4,8 +4,8 @@
 font-family: 'Alegreya Sans', sans-serif;*/
 
 .body {
-  font-family: 'Droid Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
+  font-family: 'Droid Sans', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -15,12 +15,12 @@ a {
 }
 
 .nav {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  min-height: 30px;
   background: rgb(103, 128, 159);
+  margin: 0;
+  min-height: 30px;
+  padding: 0;
   text-align: right;
+  width: 100%;
 }
 
 .nav a {
@@ -38,10 +38,10 @@ a {
 }
 
 .title {
-  color: white;
-  padding-top: 3%;
-  padding-bottom: 3%;
   background-color: rgb(31, 58, 147);
+  color: white;
+  padding-bottom: 3%;
+  padding-top: 3%;
 }
 
 .block-text {
@@ -62,8 +62,8 @@ a {
 }
 
 .radio-tabs .state {
-  position: absolute;
   left: -10000px;
+  position: absolute;
 }
 
 #flights:focus ~ .tabs #flights-tab,
@@ -73,12 +73,12 @@ a {
 }
 
 .radio-tabs .tab {
-  display: inline-block;
-  padding: .5em;
-  vertical-align: top;
   background-color: #eee;
   cursor: hand;
   cursor: pointer;
+  display: inline-block;
+  padding: .5em;
+  vertical-align: top;
 }
 
 .radio-tabs .tab:hover {
@@ -123,18 +123,18 @@ a {
 
 .pic-container {
   display: inline-block;
-  width: 15%;
   height: auto;
   margin: 10px 4%;
   text-align: center;
+  width: 15%;
 }
 
 .pic {
   background-color: rgb(253, 227, 167);
   border-radius: 70%;
-  width: 100%;
   padding: 50% 0;
   text-align: center;
+  width: 100%;
 }
 
 .pic1 {
@@ -144,21 +144,21 @@ a {
 
 .pic2 {
   background-image: url("images/camera.svg");
-  background-size: cover;
   background-position: center;
+  background-size: cover;
 }
 
 .pic3 {
   background-image: url("images/biggreenleaf.svg");
-  background-size: cover;
   background-position: center;
+  background-size: cover;
 }
 
 input {  
-  padding: 9px;
-  margin: 0;
-  height: 23px;
   border: solid 1px #dcdcdc;
+  height: 23px;
+  margin: 0;
+  padding: 9px;
   transition: box-shadow 0.3s, border 0.3s;
   width: 150px;
 }
@@ -183,43 +183,43 @@ option {
 }
 
 select {
-  padding: 5px;
-  margin: 0;
-  background-color: white;
-  height: 43px;
-  border: solid 1px #dcdcdc;
-  transition: box-shadow 0.3s, border 0.3s;
-  width: 147px;
-  text-align: center;
-  border-radius: 0;
-  -webkit-appearance: none;
   -moz-appearance: none;
+  -webkit-appearance: none;
+  background-color: white;
+  border-radius: 0;
+  border: solid 1px #dcdcdc;
+  height: 43px;
+  margin: 0;
+  padding: 5px;
+  text-align: center;
   text-indent: 1px;
   text-overflow: '';
+  transition: box-shadow 0.3s, border 0.3s;
+  width: 147px;
 }
 
 option {
-  padding: 5px;
   color: red;
+  padding: 5px;
 }
 
 .search {
+  background: white;
   font-family: 'Alegreya Sans', sans-serif;
   font-size: 18px;
-  letter-spacing: 2px;
   height: 43px;
-  text-align: center;
+  letter-spacing: 2px;
   padding: 6px;
-  background: white;
+  text-align: center;
   width: 95px;
 }
 
 .footer {
   background-color: rgb(46, 204, 113);
   height: 25px;
+  max-width: 100%;
   padding-right: 15px;
   padding-top: 15px;
-  max-width: 100%;
   text-align: right;
 }
 
