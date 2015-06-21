@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
+
 <head>
-  <link href='http://fonts.googleapis.com/css?family=Droid+Sans|Alegreya+Sans:800' rel='stylesheet' type='text/css'>
+  <meta charset='utf-8' />
+  <link href='http://fonts.googleapis.com/css?family=Raleway:300|Sansita+One' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="styles/normalize.css">
   <link rel="stylesheet" type="text/css" href="styles/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,83 +19,81 @@
     </ul>
   </nav>
 
-  <div class="title">
-    <span class="block-text">Change Your Scenery</span>
-  </div>
-
   <div class="form-container">
-  <div class="radio-tabs">
-
-    <input class="state" type="radio" title="Flights" name="state" id="flights" checked />
-    <input class="state" type="radio" title="Hotels" name="state" id="hotels" />
-    <input class="state" type="radio" title="Cars" name="state" id="cars" />
-
-    <div class="tabs">
-    <span class="panel-line">Don't delay... Plan a trip today!</span> <br>
-      <label for="flights" id="flights-tab" class="tab">Flights</label>
-      <label for="hotels" id="hotels-tab" class="tab">Hotels</label>
-      <label for="cars" id="cars-tab" class="tab">Cars</label>
-    </div>
-
-    <div class="panels">
-      <div id="flights-panel" class="panel active">
-        <input type="text" name="from" required="required" tabindex="1" placeholder="Leaving From" class="margin-top">
-        <input type="text" name="destination" required="required" tabindex="2" placeholder="Destination" class="margin-top">
-        <input type="date" min="2015-06-19" name="leave" required="required" tabindex="3" autocomplete="on" class="margin-top" placeholder="leaving">
-        <input type="date" name="return" required="required" tabindex="4"  class="margin-top" placeholder="returning">
-        <select tabindex="5" class="margin-top">
-          <option value>number of people</option>
-          <option value="1"> one </option>
-          <option value="2"> two </option>
-          <option value="3"> three </option>
-          <option value="4"> four </option>
-          <option value="5"> five </option>
-        </select>
-        <button class="search margin-top" tabindex="6">Search</button>
-
+    <header class="title">
+      <span class="block-text">Change Your Scenery</span>
+      <br>
+      <span class="panel-line">Make travel plans today</span>
+    </header>
+    <div class="circle-container">
+      <div class="pic-container">
+        <div class="pic pic1"> search</div>
       </div>
-      <div id="hotels-panel" class="panel">
-        <input type="text" name="location" required="required" tabindex="2" placeholder="Location" class="margin-top">
-        <input type="date" min="2015-06-19" name="leave" required="required" tabindex="3" autocomplete="on" class="margin-top">
-        <input type="date" name="return" required="required" tabindex="4" placeholder="leaving" class="margin-top">
-        <select tabindex="5" class="margin-top">
-          <option value>number of people</option>
-          <option value="1"> one </option>
-          <option value="2"> two </option>
-          <option value="3"> three </option>
-          <option value="4"> four </option>
-          <option value="5"> five </option>
-        </select>
-        <button class="search margin-top" tabindex="6">Search</button>
-
+      <div class="line"> </div>
+      <div class="pic-container">
+        <div class="pic pic2"> select</div>
       </div>
-      <div id="cars-panel" class="panel">
-        <input type="text" name="from" required="required" tabindex="1" placeholder="Leaving From" class="margin-top">
-        <input type="text" name="destination" required="required" tabindex="2" placeholder="Destination" class="margin-top">
-        <input type="date" min="2015-06-19" name="leave" required="required" tabindex="3" autocomplete="on" class="margin-top">
-        <input type="date" name="return" required="required" tabindex="4" placeholder="leaving" class="margin-top">
-        <button class="search margin-top" tabindex="6">Search</button>
-
+      <div class="line"> </div>
+      <div class="pic-container">
+        <div class="pic pic3"> travel</div>
       </div>
     </div>
+    <div class="radio-tabs">
 
+      <input class="state" type="radio" title="Flights" name="state" id="flights" checked />
+      <input class="state" type="radio" title="Hotels" name="state" id="hotels" />
+      <input class="state" type="radio" title="Cars" name="state" id="cars" />
+
+      <div class="tabs">
+        <br>
+        <label for="flights" id="flights-tab" class="tab">Flights</label>
+        <label for="hotels" id="hotels-tab" class="tab">Hotels</label>
+        <label for="cars" id="cars-tab" class="tab">Cars</label>
+      </div>
+
+      <div class="panels">
+        <div id="flights-panel" class="panel active">
+          <input type="text" name="from" required="required" tabindex="1" placeholder="Leaving From" class="margin-top">
+          <input type="text" name="destination" required="required" tabindex="2" placeholder="Destination" class="margin-top">
+          <input type="date" min="2015-06-19" name="leave" required="required" tabindex="3" autocomplete="on" class="margin-top" placeholder="leaving">
+          <input type="date" name="return" required="required" tabindex="4" class="margin-top" placeholder="returning">
+          <select tabindex="5" class="margin-top">
+            <option value>number of people</option>
+            <option value="1"> one </option>
+            <option value="2"> two </option>
+            <option value="3"> three </option>
+            <option value="4"> four </option>
+            <option value="5"> five </option>
+          </select>
+          <button class="search margin-top" tabindex="6">Search</button>
+        </div>
+
+        <div id="hotels-panel" class="panel">
+          <input type="text" name="location" required="required" tabindex="1" placeholder="Location" class="margin-top">
+          <input type="date" min="2015-06-19" name="leave" required="required" tabindex="2" autocomplete="on" class="margin-top">
+          <input type="date" name="return" required="required" tabindex="3" placeholder="leaving" class="margin-top">
+          <select tabindex="4" class="margin-top">
+            <option value>number of people</option>
+            <option value="1"> one </option>
+            <option value="2"> two </option>
+            <option value="3"> three </option>
+            <option value="4"> four </option>
+            <option value="5"> five </option>
+          </select>
+          <button class="search margin-top" tabindex="6">Search</button>
+        </div>
+
+        <div id="cars-panel" class="panel">
+          <input type="text" name="from" required="required" tabindex="1" placeholder="Leaving From" class="margin-top">
+          <input type="text" name="destination" required="required" tabindex="2" placeholder="Destination" class="margin-top">
+          <input type="date" min="2015-06-19" name="leave" required="required" tabindex="3" autocomplete="on" class="margin-top">
+          <input type="date" name="return" required="required" tabindex="4" placeholder="leaving" class="margin-top">
+          <button class="search margin-top" tabindex="6">Search</button>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-  
-
-  <div class="circle-container">
-    <div class="pic-container">
-      <div class="pic pic1"> </div>
-    </div>
-    <div class="pic-container">
-      <div class="pic pic2"> </div>
-    </div>
-    <div class="pic-container">
-      <div class="pic pic3"> </div>
-    </div>
-  </div>
-
-<footer class="footer"> &#169; Change Your Scenery 2015 </footer>
+  <footer class="footer"> &#169; Change Your Scenery 2015 </footer>
 </body>
 
 </html>

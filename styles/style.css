@@ -1,11 +1,6 @@
-/* Alegra sans & Droid*/
-/*font-family: 'Droid Sans', sans-serif;
-
-font-family: 'Alegreya Sans', sans-serif;*/
-
 .body {
   -webkit-font-smoothing: antialiased;
-  font-family: 'Droid Sans', sans-serif;
+  font-family:'Raleway', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -34,31 +29,39 @@ a {
 
 .nav li {
   display: inline-block;
+  font-size: 1em;
   padding: .5em .5em;
 }
 
 .title {
-  background-color: rgb(31, 58, 147);
+  background-color: transparent;
   color: white;
   padding-bottom: 3%;
   padding-top: 3%;
 }
 
-.block-text {
+.panel-line {
+  color: rgb(79, 99, 124);
   display: block;
-  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 2.2em;
+  margin-top: -12px;
+  text-align: center;
+}
+
+.block-text {
+  color: gray;
+  display: block;
+  font-family: 'Sansita One', cursive;
   font-size: 6vw;
   text-align: center;
 }
 
 .form-container {
   background-color: rgb(78, 205, 196);
-  padding: 3em 3em 5em 3em;
-}
-
-.panel-line {
-  color: rgb(226, 106, 106);
-  display: block;
+  background-image: url("images/field.jpg");
+  background-size: cover;
+  min-height: 800px;
+  padding: 1em 3em 5em 3em;
 }
 
 .radio-tabs .state {
@@ -77,8 +80,8 @@ a {
   cursor: hand;
   cursor: pointer;
   display: inline-block;
-  padding: .5em;
-  vertical-align: top;
+  font-size: 1.1em;
+  padding: 0.5em;
 }
 
 .radio-tabs .tab:hover {
@@ -114,7 +117,6 @@ a {
 #cars:checked ~ .panels #cars-panel {
   display: block;
 }
-/* end of show */
 
 .circle-container {
   margin: 3% 0;
@@ -124,39 +126,40 @@ a {
 .pic-container {
   display: inline-block;
   height: auto;
-  margin: 10px 4%;
+  margin: 10px 1%;
   text-align: center;
-  width: 15%;
+  width: 10%;
 }
 
 .pic {
-  background-color: rgb(253, 227, 167);
+  background-color: white;
   border-radius: 70%;
-  padding: 50% 0;
+  color: gray;
+  font-family: 'Sansita One', cursive;
+  padding: 35.8% 0%;
+  font-size: 2.2vw;
   text-align: center;
   width: 100%;
 }
 
 .pic1 {
-  background-image: url("images/waterleaf.svg");
-  background-size: cover;
+  box-shadow: 0 0 5px 5px rgba(175, 177, 99, 1);
 }
 
-.pic2 {
-  background-image: url("images/camera.svg");
-  background-position: center;
-  background-size: cover;
+.pic2, .pic3 {
+    color: rgb(184, 184, 184);
 }
 
-.pic3 {
-  background-image: url("images/biggreenleaf.svg");
-  background-position: center;
-  background-size: cover;
+.line {
+  background: white;
+  border-top: 1px solid white;
+  display: inline-block;
+  width: 2.8%;
 }
 
 input {  
   border: solid 1px #dcdcdc;
-  height: 23px;
+  height: 43px;
   margin: 0;
   padding: 9px;
   transition: box-shadow 0.3s, border 0.3s;
@@ -169,7 +172,7 @@ input[type=date]::-webkit-inner-spin-button {
 }
 
 input[type=date] {
-  width: 134px;
+  width: 150px;
 }
 
 .margin-top {
@@ -188,14 +191,13 @@ select {
   background-color: white;
   border-radius: 0;
   border: solid 1px #dcdcdc;
-  height: 43px;
+  height: 63px;
   margin: 0;
-  padding: 5px;
-  text-align: center;
-  text-indent: 1px;
+  padding: 6px;
+  text-indent: 10px;
   text-overflow: '';
   transition: box-shadow 0.3s, border 0.3s;
-  width: 147px;
+  width: 171px;
 }
 
 option {
@@ -204,10 +206,9 @@ option {
 }
 
 .search {
-  background: white;
-  font-family: 'Alegreya Sans', sans-serif;
+  background: rgb(226, 225, 225);
   font-size: 18px;
-  height: 43px;
+  height: 61px;
   letter-spacing: 2px;
   padding: 6px;
   text-align: center;
@@ -215,7 +216,7 @@ option {
 }
 
 .footer {
-  background-color: rgb(46, 204, 113);
+  background-color: #A5C8DE;
   height: 25px;
   max-width: 100%;
   padding-right: 15px;
@@ -230,6 +231,23 @@ option {
 }
 
 @media (max-width: 580px) {
+  
+  .block-text {
+    font-size: 8vw;
+  }
+
+  .panel-line {
+    font-size: 1.5em;
+  }
+
+  .pic-container {
+    min-width: 70px;
+  }
+
+  .pic {
+    font-size: 13px;
+  }
+
   .radio-tabs {
     width: -webkit-min-content;
   }
