@@ -3,7 +3,7 @@
 
 <head>
   <meta charset='utf-8' />
-  <link href='http://fonts.googleapis.com/css?family=Raleway:300|Sansita+One' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:300|Sansita+One' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="styles/normalize.css">
   <link rel="stylesheet" type="text/css" href="styles/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,9 +21,9 @@
 
   <div class="form-container">
     <header class="title">
-      <span class="block-text">Change Your Scenery</span>
+      <span class="header">Change Your Scenery</span>
       <br>
-      <span class="panel-line">Make travel plans today</span>
+      <span class="subheader">Make travel plans today</span>
     </header>
     <div class="circle-container">
       <div class="pic-container">
@@ -45,7 +45,7 @@
       <input class="state" type="radio" title="Cars" name="state" id="cars" />
 
       <div class="tabs">
-        <br>
+
         <label for="flights" id="flights-tab" class="tab">Flights</label>
         <label for="hotels" id="hotels-tab" class="tab">Hotels</label>
         <label for="cars" id="cars-tab" class="tab">Cars</label>
@@ -53,42 +53,74 @@
 
       <div class="panels">
         <div id="flights-panel" class="panel active">
-          <input type="text" name="from" required="required" tabindex="1" placeholder="Leaving From" class="margin-top">
-          <input type="text" name="destination" required="required" tabindex="2" placeholder="Destination" class="margin-top">
-          <input type="date" min="2015-06-19" name="leave" required="required" tabindex="3" autocomplete="on" class="margin-top" placeholder="leaving">
-          <input type="date" name="return" required="required" tabindex="4" class="margin-top" placeholder="returning">
-          <select tabindex="5" class="margin-top">
-            <option value>number of people</option>
-            <option value="1"> one </option>
-            <option value="2"> two </option>
-            <option value="3"> three </option>
-            <option value="4"> four </option>
-            <option value="5"> five </option>
-          </select>
-          <button class="search margin-top" tabindex="6">Search</button>
+          <div class="form one-five">
+            <label> From </label>
+            <input type="text" name="from" required="required" tabindex="1">
+          </div>
+          <div class="form one-five">
+            <label> To </label>
+            <input type="text" name="destination" required="required" tabindex="2">
+          </div>
+          <div class="form one-five">
+            <label> Leaving </label>
+            <input type="text" name="leave" required="required" tabindex="3" placeholder="mm-dd-yyyy">
+          </div>
+          <div class="form one-five">
+            <label> Returning </label>
+            <input type="text" name="return" required="required" tabindex="4" placeholder="mm-dd-yyyy">
+          </div>
+          <div class="form one-five">
+            <label> How many are going? </label>
+            <input type="text" name="return" required="required" tabindex="5" placeholder="number">
+          </div>
+          <div class="button-center">
+            <button class="button plane" tabindex="5">Search</button>
+          </div>
         </div>
 
         <div id="hotels-panel" class="panel">
-          <input type="text" name="location" required="required" tabindex="1" placeholder="Location" class="margin-top">
-          <input type="date" min="2015-06-19" name="leave" required="required" tabindex="2" autocomplete="on" class="margin-top">
-          <input type="date" name="return" required="required" tabindex="3" placeholder="leaving" class="margin-top">
-          <select tabindex="4" class="margin-top">
-            <option value>number of people</option>
-            <option value="1"> one </option>
-            <option value="2"> two </option>
-            <option value="3"> three </option>
-            <option value="4"> four </option>
-            <option value="5"> five </option>
-          </select>
-          <button class="search margin-top" tabindex="6">Search</button>
+          <div class="form one-four">
+            <label> Where </label>
+            <input type="text" name="location" required="required" tabindex="1" placeholder="Location">
+          </div>
+          <div class="form one-four">
+            <label> Checking In </label>
+            <input type="text" min="2015-06-19" name="leave" required="required" tabindex="2" autocomplete="on" placeholder="mm-dd-yyyy">
+          </div>
+          <div class="form one-four">
+            <label> Checking Out </label>
+            <input type="text" name="return" required="required" tabindex="3" placeholder="mm-dd-yyyy">
+          </div>
+          <div class="form one-four">
+            <label> How many are staying? </label>
+            <input type="text" name="return" required="required" tabindex="4"placeholder="number">
+
+          </div>
+          <div class="button-center">
+            <button class="button hotel" tabindex="5">Search</button>
+          </div>
         </div>
 
         <div id="cars-panel" class="panel">
-          <input type="text" name="from" required="required" tabindex="1" placeholder="Leaving From" class="margin-top">
-          <input type="text" name="destination" required="required" tabindex="2" placeholder="Destination" class="margin-top">
-          <input type="date" min="2015-06-19" name="leave" required="required" tabindex="3" autocomplete="on" class="margin-top">
-          <input type="date" name="return" required="required" tabindex="4" placeholder="leaving" class="margin-top">
-          <button class="search margin-top" tabindex="6">Search</button>
+          <div class="form one-four">
+            <label> From</label>
+            <input type="text" name="from" required="required" tabindex="1">
+          </div>
+          <div class="form one-four">
+            <label> To </label>
+            <input type="text" name="destination" required="required" tabindex="2">
+          </div>
+          <div class="form one-four">
+            <label> Leaving </label>
+            <input type="text" min="2015-06-19" name="leave" required="required" tabindex="3" autocomplete="on" placeholder="mm-dd-yyyy">
+          </div>
+          <div class="form one-four">
+            <label> Returning </label>
+            <input type="text" name="return" required="required" tabindex="4" placeholder="mm-dd-yyyy">
+          </div>
+          <div class="button-center">
+            <button class="button car" tabindex="5">Search</button>
+          </div>
         </div>
       </div>
     </div>

@@ -1,6 +1,11 @@
+html {
+  height: 100%;
+}
+
 .body {
   -webkit-font-smoothing: antialiased;
-  font-family:'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -33,6 +38,15 @@ a {
   padding: .5em .5em;
 }
 
+.form-container {
+  background-color: rgb(78, 205, 196);
+  background-image: url("images/field.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  min-height: 100%;
+  overflow: hidden;
+}
+
 .title {
   background-color: transparent;
   color: white;
@@ -40,28 +54,60 @@ a {
   padding-top: 3%;
 }
 
-.panel-line {
+.header {
+  color: gray;
+  display: block;
+  font-family: 'Sansita One', cursive;
+  font-size: 8.7vw;
+  text-align: center;
+}
+
+.subheader {
   color: rgb(79, 99, 124);
   display: block;
-  font-size: 2.2em;
+  font-size: 5.4vw;
   margin-top: -12px;
   text-align: center;
 }
 
-.block-text {
-  color: gray;
-  display: block;
-  font-family: 'Sansita One', cursive;
-  font-size: 6vw;
+.circle-container {
+  margin: 3% 0;
   text-align: center;
 }
 
-.form-container {
-  background-color: rgb(78, 205, 196);
-  background-image: url("images/field.jpg");
-  background-size: cover;
-  min-height: 800px;
-  padding: 1em 3em 5em 3em;
+.pic-container {
+  display: inline-block;
+  height: auto;
+  margin: 3px 1%;
+  text-align: center;
+  width: 16%;
+}
+
+.pic {
+  background-color: white;
+  border-radius: 70%;
+  color: gray;
+  font-family: 'Sansita One', cursive;
+  padding: 35.8% 0%;
+  font-size: 3.6vw;
+  text-align: center;
+  width: 100%;
+}
+
+.pic1 {
+  box-shadow: 0 0 5px 5px rgba(175, 177, 99, 1);
+}
+
+.pic2,
+.pic3 {
+  color: rgb(184, 184, 184);
+}
+
+.line {
+  background: white;
+  border-top: 1px solid white;
+  display: inline-block;
+  width: 2.8%;
 }
 
 .radio-tabs .state {
@@ -81,7 +127,7 @@ a {
   cursor: pointer;
   display: inline-block;
   font-size: 1.1em;
-  padding: 0.5em;
+  padding: 0.7em;
 }
 
 .radio-tabs .tab:hover {
@@ -96,16 +142,17 @@ a {
   cursor: default;
 }
 
-.radio-tabs .panels {
-  background-color: #fff;
-  padding: 1.3em;
-  width: 74%;
-  width: intrinsic;
+.panels {
+  background-color: rgba(255, 255, 255, 1);
+  float: left;
+  overflow: hidden;
+  width: 100%;
 }
 
 .radio-tabs {
-  margin: 0 auto;
-  width: -webkit-max-content;
+  margin: 45px auto;
+  width: 85%;
+  overflow: hidden;
 }
 
 .radio-tabs .panel {
@@ -118,140 +165,114 @@ a {
   display: block;
 }
 
-.circle-container {
-  margin: 3% 0;
-  text-align: center;
-}
-
-.pic-container {
-  display: inline-block;
-  height: auto;
-  margin: 10px 1%;
-  text-align: center;
-  width: 10%;
-}
-
-.pic {
-  background-color: white;
-  border-radius: 70%;
-  color: gray;
-  font-family: 'Sansita One', cursive;
-  padding: 35.8% 0%;
-  font-size: 2.2vw;
-  text-align: center;
+.form {
+  float: left;
+  margin-top: 15px;
   width: 100%;
 }
 
-.pic1 {
-  box-shadow: 0 0 5px 5px rgba(175, 177, 99, 1);
+label {
+  display: block;
+  font-size: 0.9em;
+  padding-top: 9px;
 }
 
-.pic2, .pic3 {
-    color: rgb(184, 184, 184);
-}
-
-.line {
-  background: white;
-  border-top: 1px solid white;
-  display: inline-block;
-  width: 2.8%;
-}
-
-input {  
+input {
   border: solid 1px #dcdcdc;
+  float: left;
   height: 43px;
-  margin: 0;
-  padding: 9px;
-  transition: box-shadow 0.3s, border 0.3s;
-  width: 150px;
+  margin-top: 6px;
+  padding-left: 6px;
+  width: 94%;
 }
 
-input[type=date]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  display: none;
+#flights-panel,
+#hotels-panel,
+#cars-panel {
+  padding-left: 0.6em;
+  padding-right: 0.6em;
 }
 
-input[type=date] {
-  width: 150px;
+.button-center {
+  margin: 0 auto;
+  width: 122px;
 }
 
-.margin-top {
-  margin-top: 5px;
-}
-
-select,
-option {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-
-select {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  background-color: white;
-  border-radius: 0;
-  border: solid 1px #dcdcdc;
-  height: 63px;
-  margin: 0;
-  padding: 6px;
-  text-indent: 10px;
-  text-overflow: '';
-  transition: box-shadow 0.3s, border 0.3s;
-  width: 171px;
-}
-
-option {
-  color: red;
-  padding: 5px;
-}
-
-.search {
+.button {
   background: rgb(226, 225, 225);
   font-size: 18px;
-  height: 61px;
+  height: 43px;
   letter-spacing: 2px;
-  padding: 6px;
-  text-align: center;
-  width: 95px;
+  line-height: 1px;
+  margin: 15px auto;
+  padding: 8px;
+  text-decoration: none;
+  text-align: left;
+  width: 122px;
+}
+
+.button:hover {
+  font-weight: bold;
+}
+
+.plane {
+  background-image: url("images/plane.png");
+  background-position: right 4px bottom 2px;
+}
+
+.hotel {
+  background-image: url("images/bed.png");
+  background-position: right 1px bottom 0px;
+}
+
+.car {
+  background-image: url("images/car.png");
+  background-position: right 5px bottom 4px;
+}
+
+.plane,
+.hotel,
+.car {
+  background-repeat: no-repeat;
 }
 
 .footer {
-  background-color: #A5C8DE;
+  background-color: rgba(0, 0, 0, 0.5);
   height: 25px;
-  max-width: 100%;
   padding-right: 15px;
-  padding-top: 15px;
-  text-align: right;
+  padding-top: 7px;
+  text-align: center;
 }
 
-@media (max-width: 985px) {
-  .radio-tabs {
-    width: 522px;
+@media (min-width: 750px) {
+  .header {
+    font-size: 65px;
   }
-}
-
-@media (max-width: 580px) {
-  
-  .block-text {
-    font-size: 8vw;
+  .form {
+    width: 50%;
   }
-
-  .panel-line {
-    font-size: 1.5em;
+  .subheader {
+    font-size: 40px;
   }
-
   .pic-container {
-    min-width: 70px;
+    width: 124px;
   }
-
   .pic {
-    font-size: 13px;
-  }
-
-  .radio-tabs {
-    width: -webkit-min-content;
-  }
-  .search {
-    margin-left: 20%;
+    font-size: 30px;
   }
 }
+
+@media (min-width: 1000px) {
+  .entry {
+    display: inline-block;
+    width: 20%;
+  }
+  .one-four {
+    width: 25%;
+  }
+  .one-five {
+    width: 20%;
+  }
+}
+
+
